@@ -18,6 +18,7 @@ import seaborn as sns
 
 
 
+#Load model
 class Beluga(nn.Module):
     def __init__(self):
         super(Beluga, self).__init__()
@@ -33,16 +34,6 @@ class Beluga(nn.Module):
         x = self.out1(x)
         return x
 
-
-
-completemodel=Beluga()
-model = torch.load(os.path.join(output_directory,'model_CNN.pth'),map_location=torch.device('cpu'))
-new_state_dict = {'modeltest.0.weight': model[list(model.keys())[0]], 'modeltest.0.bias': model[list(model.keys())[1]],
- 'out1.weight':model[list(model.keys())[2]],'out1.bias':model[list(model.keys())[3]]}
-completemodel.load_state_dict(new_state_dict)
-
-
-completemodel(x)
 
 def one_hot_encode(sequences):
     ######################################################
