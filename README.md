@@ -9,4 +9,4 @@ activity by detecting known protein-binding motifs in HEPG2 and K562 cell lines.
 the combinations of SuRE dataset and deep learning models to decode the non-coding genome.
 
 
-In these repository you will find the code for training and tunning the hyperparemeters of a Convolutional neural network (CNN), along with the motif extraction of the first convolutional layer.
+In these repository you will find the code for training and tunning the hyperparemeters of a Convolutional neural network (CNN) (final_CNN_GLM_SuRE_tunning.py), along with the motif extraction of the first convolutional layer (final_conv1d_PWM.py).
