@@ -17,24 +17,6 @@ import seaborn as sns
 
 
 
-
-#Load model
-class Beluga(nn.Module):
-    def __init__(self):
-        super(Beluga, self).__init__()
-        self.modeltest = nn.Sequential( nn.Conv1d(in_channels=4,out_channels=128,kernel_size=10),
-                            nn.ReLU(),
-                            nn.MaxPool1d(3),
-                            nn.Dropout(0.2))
-        self.out1 = nn.LazyLinear(out_features=1)
-    def forward(self, x):
-        x = self.modeltest(x)
-        x = x.view(x.size(0), -1)
-        print(x.shape)
-        x = self.out1(x)
-        return x
-
-
 def one_hot_encode(sequences):
     ######################################################
     #Gives the sequence encoded in one hot coding with padding
