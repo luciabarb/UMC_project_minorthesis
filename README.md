@@ -1,3 +1,5 @@
+Prediction of variant effects on promoter activity with deep learning-based sequence models
+
 Non-coding DNA comprises 98% of the human genome, where the majority of mutations in cancer take place. Most non-coding regions contain the information to regulate gene expression but only
 recently have we started studying the impact of mutations in these regions. Therefore, there is an urgent need to characterize the regulatory genome and its functional variants. Current com-
 putational algorithms that aim to unravel this matter make use of epigenetic marks measured on a genome-wide scale. Hence, their performance is limited by linkage disequilibrium (LD), as it is
